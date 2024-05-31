@@ -1,12 +1,21 @@
 const navToggle = document.querySelector(".nav-toggle");
-const navLinks = document.querySelectorAll('.nav__link');
+const navLinks = document.querySelectorAll(".nav__link");
 //attaching nan event listener on the togggler.
-navToggle.addEventListener('click',() =>{
-    document.body.classList.toggle('nav-open');
-})
+navToggle.addEventListener("click", () => {
+  document.body.classList.toggle("nav-open");
+});
 //looping through node of links..
-navLinks.forEach(link =>{
-    link.addEventListener('click',() =>{
-      document.body.classList.remove('nav-open');
-    })
-})
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    document.body.classList.remove("nav-open");
+  });
+});
+
+//
+
+var typed = new Typed(".auto-type", {
+  strings: ["Developer", "Designer", "Freelancer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true,
+});

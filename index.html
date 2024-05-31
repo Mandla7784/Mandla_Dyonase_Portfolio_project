@@ -1,169 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mandla Dyonase Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        <link rel="stylesheet" href="index.css">
-        <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mandla Dyonase Portfolio Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <h2 >Mandla  <span style="color: rgb(74, 194, 202);">The Dev</span></h2>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body style="background-color: rgb(14, 13, 13); color: white">
+    <header>
+      <div class="logo">
+        <h2 style="color: rgb(141, 140, 140)">
+          Mandla <span style="color: rgb(255, 255, 255)">The Dev</span>
+        </h2>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#footer" class="nav__link">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section
+      class="intro d-flex gap-5 w-100 h-100 justify-content-center px-5 align-items-center"
+      id="home"
+    >
+      <h4 class="m-5 section__title section__title--intro">
+        Hi, I am a <strong class="auto-type"></strong>
+      </h4>
+
+      <img
+        style="
+          border: 10px solid hsl(221, 18%, 18%);
+          width: 300px;
+          box-shadow: rgb(69, 69, 71) 0px 0px 0px 2px inset,
+            rgb(255, 255, 255) 10px -10px 0px -3px, rgb(67, 68, 67) 10px -10px,
+            rgb(255, 255, 255) 20px -20px 0px -3px, rgb(84, 151, 63) 20px -20px,
+            rgb(255, 255, 255) 30px -30px 0px -3px,
+            rgb(173, 134, 134) 30px -30px,
+            rgb(255, 255, 255) 40px -40px 0px -3px, rgb(90, 89, 89) 40px -40px;
+        "
+        src="https://cdn.discordapp.com/attachments/1197843685455446107/1227591473084497950/IMG_7957.jpg?ex=665a66e6&is=66591566&hm=81928aede8857364187e94f6810faae7e6319f4642c347b5b387a117f86313c4&"
+        alt="a picture of Jane Smith smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div
+          style="
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+              rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+              rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+              rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+              rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+              rgba(0, 0, 0, 0.09) 0px 32px 16px;
+          "
+          class="service card text-light"
+        >
+          <h3>Design + Development</h3>
+          <p>
+            As a skilled design and development developer, I possess a unique
+            blend of creative and technical expertise. With a keen eye for
+            aesthetics and a strong foundation in front-end technologies, I
+            excel at crafting visually appealing and user-friendly digital
+            experiences. My passion lies in translating design concepts into
+            functional, responsive, and accessible websites and applications
+            <div>
+                <box-icon name='99designs' type='logo' color='#fff2f2' ></box-icon>
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Mandla Dyonase</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-            <img src="dev-jane-01.jpg" alt="a picture of Jane Smith smiling"  class="intro__img">
-        </section>
-        
-        
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Design + Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>E-Commerce</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>WordPress</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
-            
-            <a href="#work" class="btn">My Work</a>
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Designer & developer based out of NYC</p>
-           
-           <div class="about-me__body">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           </div>
-           
-           <img src="dev-jane-02.jpg" alt="Jane leaning against a bus" class="about-me__img">
-        </section>
-        
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title">My work</h2>
-            <p class="section__subtitle" >A selection of my range of work</p>
-            
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 02 -->
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="portfolio-02.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 03 -->
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="portfolio-03.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 04 -->
-                <a href="portfolio-10.jpg" class="portfolio__item">
-                    <img src="portfolio-04.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 05 -->
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="portfolio-05.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 06 -->
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="portfolio-06.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 07 -->
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="portfolio-07.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 08 -->
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="portfolio-08.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 09 -->
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="portfolio-09.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 0 0-->
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="portfolio-10.jpg" alt="" class="portfolio__img">
-                </a>
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div
+          style="
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+              rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+              rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+              rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+              rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+              rgba(0, 0, 0, 0.09) 0px 32px 16px;
+          "
+          class="service card text-light"
+        >
+          <h3>E-Commerce</h3>
+          <p>
+            As an e-commerce developer, I specialize in creating dynamic and
+            user-friendly online shopping experiences. With a deep understanding
+            of e-commerce platforms and technologies, I excel in building secure
+            and efficient websites that drive sales and enhance customer
+            satisfaction. My expertise lies in developing custom solutions
+            tailored to meet the unique needs of online businesses, from
+            seamless checkout processes to intuitive product displays.
+            <div>
+                <box-icon name='product-hunt' type='logo' color='#fff2f2' ></box-icon>
             </div>
-        </section>
-        
+          </p>
+        </div>
+        <!-- / service -->
 
-<!--Footer-->
+        <div
+          style="
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+              rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+              rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+              rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+              rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+              rgba(0, 0, 0, 0.09) 0px 32px 16px;
+          "
+          class="service"
+        >
+          <h3>Bootstrap</h3>
+          <p>
+            As a skilled Bootstrap developer, I have a strong passion for
+            creating visually appealing and responsive websites. With a keen eye
+            for design and a solid understanding of Bootstrap's framework, I
+            excel at crafting modern, mobile-friendly interfaces that provide an
+            optimal user experience across various devices. My expertise lies in
+            leveraging Bootstrap's grid system, components, and utilities to
+            build clean, well-structured code that is easy to maintain and
+            scale.
+            <div>
+                <box-icon name='bootstrap' type='logo' color='#a31bff' ></box-icon>
+            </div>
 
-<footer >
-    <a href="Marsatti7784@gmail.com" class="footer__link">Marsatti7784@gmail.com</a>
-    <ul class="social-list">
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p
+        style="color: rgb(43, 41, 41)"
+        class="section__subtitle section__subtitle--about"
+      >
+        Software Engineer / developer based out of Cape Town
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          As a junior developer, I am passionate about learning and growing in
+          the field of web development. With a strong foundation in HTML, CSS,
+          and JavaScript, I am eager to expand my skills and tackle new
+          challenges. I strive to contribute positively to projects, collaborate
+          effectively with team members, and continuously improve my coding
+          abilities. As a detail-oriented individual, I pay close attention to
+          best practices and seek to write clean, efficient code. I am
+          enthusiastic about exploring different technologies and frameworks to
+          enhance my knowledge and deliver high-quality solutions. With a
+          proactive and adaptable mindset, I am committed to embracing feedback,
+          refining my skills, and building a successful career in the dynamic
+          world of software development.
+        </p>
+        <p>
+          I aim to bring value by delivering high-quality solutions that meet
+          the needs of the business and exceed customer expectations. I strive
+          to collaborate effectively with my team to ensure seamless
+          communication and efficient project execution. By leveraging my
+          technical expertise and creative problem-solving skills, I aim to
+          drive innovation and improve processes within the organization.
+        </p>
+      </div>
+
+      <img
+        style="
+          box-shadow: rgba(106, 228, 106, 0.4) 5px 5px,
+            rgba(250, 248, 249, 0.3) 10px 10px, rgba(19, 17, 17, 0.2) 15px 15px,
+            rgba(22, 21, 22, 0.1) 20px 20px, rgba(62, 230, 202, 0.05) 25px 25px;
+        "
+        src="https://cdn.discordapp.com/attachments/1197843685455446107/1227591475034849360/IMG_7960.jpg?ex=665a66e7&is=66591567&hm=3c1b7710e667df3ddcee6e038608d3383b9a1a59bd585728b66176710853936d&"
+        alt="Mandla leaning against the wall"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title">My work</h2>
+      <p class="section__subtitle">A selection of my range of work</p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="portfolio.html" class="portfolio__item">
+          <img src="Agile.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="portfolio.html" class="portfolio__item">
+          <img src="portfolio-02.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="portfolio.html" class="portfolio__item">
+          <img src="portfolio-03.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a href="portfolio-10.jpg" class="portfolio__item">
+          <img src="portfolio-04.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 05 -->
+        <a href="portfolio.html" class="portfolio__item">
+          <img src="portfolio-05.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 06 -->
+        <a href="portfolio.html" class="portfolio__item">
+          <img src="portfolio-06.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 07 -->
+        <a href="portfolio.html" class="portfolio__item">
+          <img src="portfolio-07.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 08 -->
+        <a href="portfolio.html" class="portfolio__item">
+          <img src="portfolio-08.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 09 -->
+        <a href="portfolio.html" class="portfolio__item">
+          <img src="portfolio-09.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 0 0-->
+        <a href="portfolio.html" class="portfolio__item">
+          <img src="portfolio-10.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer>
+      <a href="Marsatti7784@gmail.com" class="footer__link"
+        >Marsatti7784@gmail.com</a
+      >
+      <ul class="social-list">
         <li class="social-list__item">
-            <a class="social-list__link" href="https://codepen.io">
-                <i class="fab fa-codepen"></i>
-            </a>
+          <a class="social-list__link" href="https://codepen.io">
+            <i class="fab fa-codepen"></i>
+          </a>
         </li>
         <li class="social-list__item">
-            <a class="social-list__link" href="http://dribbble.com">
-                <i class="fab fa-dribbble"></i>
-            </a>
+          <a class="social-list__link" href="http://dribbble.com">
+            <i class="fab fa-dribbble"></i>
+          </a>
         </li>
         <li class="social-list__item">
-            <a class="social-list__link" href="https://twitter.com">
-                <i class="fab fa-twitter"></i>
-            </a>
+          <a class="social-list__link" href="https://twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
         </li>
         <li class="social-list__item">
-            <a class="social-list__link" href="https://github.com">
-                <i class="fab fa-github"></i>
-            </a>
+          <a class="social-list__link" href="https://github.com">
+            <i class="fab fa-github"></i>
+          </a>
         </li>
-    </ul>
-</footer>
-<script src="index.js"></script>
-</body>
+      </ul>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: [
+          "Mandla",
+          "Front-end Developer",
+          "with passion",
+          "Web Developer",
+          "Javascript Developer",
+          "python Developer",
+
+          "Freelancer",
+        ],
+        typeSpeed: 300,
+        backSpeed: 90,
+        loop: true,
+      });
+    </script>
+  </body>
 </html>

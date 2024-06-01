@@ -18,7 +18,7 @@ document.addEventListener("mousemove", function (e) {
   hoverCircle.style.top = e.pageY + "px";
 
   const followerPlanets = document.getElementById("followerPlanets");
-  const numFollowers = 8; // Adjust the number of follower planets
+  const numFollowers = 8;
 
   // Clear previous follower planets
   followerPlanets.innerHTML = "";

@@ -490,7 +490,6 @@ footer a {
   transition: opacity 250ms ease-in-out;
 }
 
-/* Additional styles for fixed navbar */
 @media (min-width: 768px) {
   header {
     position: fixed;
@@ -499,6 +498,96 @@ footer a {
   }
 
   body {
-    padding-top: 70px; /* Adjust this value based on the height of your header */
+    padding-top: 70px;
+  }
+}
+
+.nav__list-top li a {
+  text-decoration: none;
+  margin: 0 1em;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__list-top {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .nav__list-top {
+    display: noe !important;
+  }
+}
+
+.hover-circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: border 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(255, 255, 255, 0.6);
+  animation: spin 20s linear infinite;
+}
+
+.follower-circle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: glowing 2s infinite alternate;
+}
+
+.planet {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.earth {
+  background-color: #3b5998;
+  background-image: url("https://i.pinimg.com/736x/68/6f/40/686f40cd3db2aa8bd6f3157eb0c149aa.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.mars {
+  background-color: #ff7f50; /* Red color resembling Mars */
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #cc6666,
+    #ff9999
+  ); /* Red terrain */
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes glowing {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff;
   }
 }

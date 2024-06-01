@@ -11,11 +11,34 @@ navLinks.forEach((link) => {
   });
 });
 
-//
+///////////////////////PLANETS////////////////////////
+document.addEventListener("mousemove", function (e) {
+  const hoverCircle = document.getElementById("hoverCircle");
+  hoverCircle.style.left = e.pageX + "px";
+  hoverCircle.style.top = e.pageY + "px";
 
-var typed = new Typed(".auto-type", {
-  strings: ["Developer", "Designer", "Freelancer"],
-  typeSpeed: 100,
-  backSpeed: 100,
-  loop: true,
+  const followerPlanets = document.getElementById("followerPlanets");
+  const numFollowers = 8; // Adjust the number of follower planets
+
+  // Clear previous follower planets
+  followerPlanets.innerHTML = "";
+
+  // Create follower planets
+  for (let i = 0; i < numFollowers; i++) {
+    const follower = document.createElement("div");
+    follower.classList.add("follower-circle");
+    follower.style.left = Math.random() * window.innerWidth + "px";
+    follower.style.top = Math.random() * window.innerHeight + "px";
+    followerPlanets.appendChild(follower);
+  }
+
+  // Add Earth
+  const earth = document.getElementById("earth");
+  earth.style.left = e.pageX - 30 + "px"; // Offset to center Earth
+  earth.style.top = e.pageY - 30 + "px"; // Offset to center Earth
+
+  // Add Mars
+  const mars = document.getElementById("mars");
+  mars.style.left = e.pageX + 30 + "px"; // Offset to center Mars
+  mars.style.top = e.pageY - 30 + "px"; // Offset to center Mars
 });

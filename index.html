@@ -36,16 +36,18 @@
   </head>
   <body style="background-color: rgb(14, 13, 13); color: white">
     <header>
-      <div class="logo d-flex  " style="display: flex;justify-content: space-between ; padding: 0 4em; background-color: rgb(24, 22, 22); width: 100%;height: 100%;">
-        <h2 style="color: rgb(141, 140, 140)">
+      <div class="logo d-flex  " style="display: flex;justify-content: space-between ; align-items: center; padding: 1.5em 4em; background-color: rgb(24, 22, 22); width: 100%;height: 100%;">
+        <h2 style="color: rgb(141, 140, 140);font-size: 1.5rem; font-family: 'Courier New', Courier, monospace;">
           Mandla <span style="color: rgb(255, 255, 255)">The Dev</span>
         </h2 >
         <ul class="nav__list-top" style="display: flex;list-style: none; padding: 0 3em; height:40px; align-items: center;">
           <li><a href="#home">Home</a></li>
-          <li><a href="#services">My Services</a></li>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#work">My Work</a></li>
-          <li><a href="#footer">Contact me</a></li>
+          <li><a href="#services">MyServices</a></li>
+        
+          <li><a href="#about">About</a></li>
+                 <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">MyWork</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
@@ -222,6 +224,113 @@
       />
     </section>
 
+
+<section id="skills" style="max-width: 900px; margin: 0 auto; padding: 4em 1.5em;">
+  <h2 class="section__title section__title--services" style="text-align:center; margin-bottom: 3rem; color: var(--clr-accent);">
+    Skills & Tools
+  </h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-logo" />
+      <span>JavaScript</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-logo" />
+      <span>Python</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" class="skill-logo" />
+      <span>Bash</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-logo" />
+      <span>CSS</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-logo" />
+      <span>Git</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-logo" />
+      <span>Java</span>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode" class="skill-logo" />
+      <span>VSCode</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="skill-logo" />
+      <span>GitHub</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" class="skill-logo" />
+      <span>GitLab</span>
+    </div>
+  
+    <div class="skill-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" class="skill-logo" />
+      <span>Gmail</span>
+    </div>
+   
+  </div>
+</section>
+<style>
+  .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background-color: rgb(37, 42, 53); /* dark background */
+  border-radius: 15px;
+  padding: 1.5rem 1rem;
+  width: 160px;
+  color: var(--clr-accent);
+  font-family: var(--ff-secondary);
+  font-weight: 900;
+  font-size: 1.1rem;
+  text-align: center;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  user-select: none;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 8px 25px rgba(196, 196, 196, 0.8);
+  color: #b2b6b4;
+}
+
+.skill-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: brightness(100%) saturate(150%);
+}
+
+</style>
+
+
+
+
+
+
+
+    
     <!-- My Work -->
     <section class="my-work" id="work">
       <h2 class="section__title">My work</h2>

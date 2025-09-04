@@ -20,7 +20,7 @@ html {
 
   --clr-light: #fff;
   --clr-dark: rgb(41, 43, 55);
-  --clr-accent: #f8f8f4;
+  --clr-accent:#d4c7c2;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -702,5 +702,68 @@ footer a {
 
   .intro__img {
     max-width: 180px;
+  }
+}
+
+
+
+
+
+/* Style the Intro Section */
+.intro {
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Intro Text Styling */
+.intro-text {
+  font-size: 24px;
+
+}
+
+/* Intro Buttons Container */
+.intro-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Button Styling */
+.btn {
+  padding: 12px 24px;
+  background-color: #030303; /* Pink/Purple */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #201f1f;
+  color: white;
+}
+
+/* Hire Me button override */
+.hire-btn {
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.hire-btn:hover {
+  background-color: #545755;
+
+}
+
+/* Responsive Layout: row on larger screens */
+@media (min-width: 600px) {
+  .intro-buttons {
+    flex-direction: row;
+    justify-content: center;
   }
 }

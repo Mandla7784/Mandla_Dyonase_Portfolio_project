@@ -35,6 +35,9 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body style="background-color: rgb(14, 13, 13); color: white">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geo&display=swap" rel="stylesheet">
     <header>
       <div class="logo d-flex  " style="display: flex;justify-content: space-between ; align-items: center; padding: 1.5em 4em; background-color: rgb(24, 22, 22); width: 100%;height: 100%;">
         <h2 style="color: rgb(141, 140, 140);font-size: 1.5rem; font-family: 'Courier New', Courier, monospace;">
@@ -47,8 +50,9 @@
           <li><a href="#about">About</a></li>
                  <li><a href="#skills">Skills</a></li>
           <li><a href="#work">MyWork</a></li>
-          <li><a href="#footer">Contact</a></li>
+       
         </ul>
+      
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
@@ -70,112 +74,112 @@
           </li>
         </ul>
       </nav>
+     
     </header>
 
     <!-- Introduction -->
-    <section
-      class="intro d-flex gap-5 w-100 h-100 justify-content-center px-5 align-items-center"
-      id="home"
-    >
-      <h4 class="m-5 section__title section__title--intro">
-        Hi, I am a <strong class="auto-type"></strong>
-      </h4>
 
-      <img src="Mandla Picture smiling"
-       
-      />
-    </section>
+<section class="intro" id="home">
+  <!-- Text -->
+  <h4 class="intro-text">
+    Hi, I am a <strong class="auto-type"></strong>
+  </h4>
 
-    <!-- My services -->
-    <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">What I do</h2>
-      <div class="services">
-        <div
-          style="
-            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-              rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-              rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-              rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-              rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-              rgba(0, 0, 0, 0.09) 0px 32px 16px;
-          "
-          class="service card text-light"
-        >
-          <h3>Design + Development</h3>
-          <p>
-            As a skilled design and development developer, I possess a unique
-            blend of creative and technical expertise. With a keen eye for
-            aesthetics and a strong foundation in front-end technologies, I
-            excel at crafting visually appealing and user-friendly digital
-            experiences. My passion lies in translating design concepts into
-            functional, responsive, and accessible websites and applications
-            <div>
-                <box-icon name='99designs' type='logo' color='#fff2f2' ></box-icon>
-            </div>
-          </p>
-        </div>
-        <!-- / service -->
+  <!-- Image -->
+  <img 
+    src="mandla.png" 
+    alt="Mandla" 
+    class="intro__img"
+  />
 
-        <div
-          style="
-            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-              rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-              rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-              rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-              rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-              rgba(0, 0, 0, 0.09) 0px 32px 16px;
-          "
-          class="service card text-light"
-        >
-          <h3>E-Commerce</h3>
-          <p>
-            As an e-commerce developer, I specialize in creating dynamic and
-            user-friendly online shopping experiences. With a deep understanding
-            of e-commerce platforms and technologies, I excel in building secure
-            and efficient websites that drive sales and enhance customer
-            satisfaction. My expertise lies in developing custom solutions
-            tailored to meet the unique needs of online businesses, from
-            seamless checkout processes to intuitive product displays.
-            <div>
-                <box-icon name='product-hunt' type='logo' color='#fff2f2' ></box-icon>
-            </div>
-          </p>
-        </div>
-        <!-- / service -->
+</section>
 
-        <div
-          style="
-            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-              rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-              rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-              rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-              rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-              rgba(0, 0, 0, 0.09) 0px 32px 16px;
-          "
-          class="service"
-        >
-          <h3>Bootstrap</h3>
-          <p>
-            As a skilled Bootstrap developer, I have a strong passion for
-            creating visually appealing and responsive websites. With a keen eye
-            for design and a solid understanding of Bootstrap's framework, I
-            excel at crafting modern, mobile-friendly interfaces that provide an
-            optimal user experience across various devices. My expertise lies in
-            leveraging Bootstrap's grid system, components, and utilities to
-            build clean, well-structured code that is easy to maintain and
-            scale.
-            <div>
-                <box-icon name='bootstrap' type='logo' color='#a31bff' ></box-icon>
-            </div>
 
-          </p>
-        </div>
-        <!-- / service -->
+<section class="my-services" id="services">
+  <h2 class="section__title section__title--services">What I Do</h2>
+  <img src="data-engineering.png" alt="Data Engineering Illustration" class="section-img">
+
+  <div class="services">
+
+    <!-- Data Pipelines -->
+    <div class="service-card glass">
+      <div class="service-icon">
+        <box-icon name='git-branch' type='solid' color='var(--clr-dark)'></box-icon>
       </div>
-      <!-- / services -->
+      <h3>Data Pipelines</h3>
+      <p>
+        I design, build, and maintain scalable ETL/ELT pipelines that move data reliably
+        from raw sources to analytics-ready systems.
+      </p>
+      <div class="tools">
+        <span class="tool">Airflow</span>
+        <span class="tool">Apache Spark</span>
+        <span class="tool">Kafka</span>
+        <span class="tool">Python</span>
+      </div>
+    </div>
 
-      <a href="#work" class="btn">My Work</a>
-    </section>
+    <!-- Cloud & Infrastructure -->
+    <div class="service-card glass">
+      <div class="service-icon">
+        <box-icon name='cloud' type='solid' color='var(--clr-dark)'></box-icon>
+      </div>
+      <h3>Cloud & Infrastructure</h3>
+      <p>
+        I leverage cloud platforms and Linux systems to deploy and manage data engineering
+        solutions at scale, ensuring performance and reliability.
+      </p>
+      <div class="tools">
+     
+        <span class="tool">Google Cloud</span>
+        <span class="tool">Linux</span>
+        <span class="tool">Docker</span>
+        <span class="tool">Kubernetes</span>
+      </div>
+    </div>
+
+    <!-- Databases & Storage -->
+    <div class="service-card glass">
+      <div class="service-icon">
+        <box-icon name='database' type='solid' color='var(--clr-dark)'></box-icon>
+      </div>
+      <h3>Databases & Storage</h3>
+      <p>
+        I work with relational, NoSQL, and data warehouse technologies to optimize
+        data storage, querying, and accessibility for business intelligence and AI.
+      </p>
+      <div class="tools">
+        <span class="tool">SQL</span>
+        <span class="tool">PostgreSQL</span>
+        <span class="tool">MongoDB</span>
+        <span class="tool">BigQuery</span>
+        <span class="tool">Snowflake</span>
+      </div>
+    </div>
+
+    <!-- Data Analytics Support -->
+    <div class="service-card glass">
+      <div class="service-icon">
+        <box-icon name='bar-chart-alt-2' type='solid' color='var(--clr-dark)'></box-icon>
+      </div>
+      <h3>Data Analytics Support</h3>
+      <p>
+        I prepare, clean, and transform datasets to empower data analysts and data
+        scientists with high-quality, analysis-ready information.
+      </p>
+      <div class="tools">
+        <span class="tool">Python</span>
+        <span class="tool">Pandas</span>
+        <span class="tool">NumPy</span>
+        <span class="tool">Jupyter</span>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="#work" class="btn">See My Projects</a>
+</section>
+
 
     <!-- About me -->
     <section class="about-me" id="about">
@@ -184,7 +188,7 @@
         style="color: rgb(43, 41, 41)"
         class="section__subtitle section__subtitle--about"
       >
-        Software Engineer / developer based out of Cape Town
+        Aspiring Data Engineer / cloud developer based out of Cape Town
       </p>
 
       <div class="about-me__body">
@@ -213,12 +217,8 @@
       </div>
 
       <img
-        style="
-          box-shadow: rgba(106, 228, 106, 0.4) 5px 5px,
-            rgba(250, 248, 249, 0.3) 10px 10px, rgba(19, 17, 17, 0.2) 15px 15px,
-            rgba(22, 21, 22, 0.1) 20px 20px, rgba(62, 230, 202, 0.05) 25px 25px;
-        "
-        src="https://cdn.discordapp.com/attachments/1197843685455446107/1227591475034849360/IMG_7960.jpg?ex=665a66e7&is=66591567&hm=3c1b7710e667df3ddcee6e038608d3383b9a1a59bd585728b66176710853936d&"
+  
+        src="mandla.png"
         alt="Mandla leaning against the wall"
         class="about-me__img"
       />
@@ -328,11 +328,10 @@
 
 
 
-
-
     
     <!-- My Work -->
     <section class="my-work" id="work">
+        <img src="github.png" alt="" srcset="">
       <h2 class="section__title">My work</h2>
       <p class="section__subtitle">A selection of my range of work</p>
 
@@ -429,15 +428,15 @@
       var typed = new Typed(".auto-type", {
         strings: [
           "Mandla",
-          "Front-end Developer",
-       
-          "Web Developer",
+          "an Aspiring Data Engineer",
+          "full stack Web  Developer",
           "Javascript Developer with passion",
-          "python Developer",
+          "Cloud Enthusiast",
+          "SQL & Non SQL Developer"
 
-          "Freelancer",
+         
         ],
-        typeSpeed: 300,
+        typeSpeed: 50,
         backSpeed: 90,
         loop: true,
       });
